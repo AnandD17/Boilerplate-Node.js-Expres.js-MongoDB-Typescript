@@ -1,11 +1,11 @@
 import express from 'express';
 const app = express();
 import dotenv from "dotenv";
-import connectDB from "./config/db.js"
+import connectDB from "./config/db"
 dotenv.config();
 const port = 4000;
 import routes from './routes';
-import { errorConverter, errorHandler } from './middleware/error.js';
+import { errorConverter, errorHandler } from './middleware/error';
 import cors from 'cors';
 
 (async () => {
