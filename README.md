@@ -24,7 +24,7 @@ Follow these steps to set up and run the application on your local machine:
 ### 1\. Clone the Repository
 
 ```
-bashCopyEditgit clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 ```
 
@@ -33,7 +33,7 @@ cd your-repo-name
 Create a new file named `.env` in the root directory and add the following environment variables with your own values:
 
 ```
-iniCopyEditJWT_SECRET=your_jwt_secret
+JWT_SECRET=your_jwt_secret
 MONGO_URL=mongodb://localhost:27017/your-database-name
 ```
 
@@ -45,19 +45,19 @@ MONGO_URL=mongodb://localhost:27017/your-database-name
 Run the following command to install all required dependencies:
 
 ```
-bashCopyEditnpm install
+npm install
 ```
 
 ### 4\. Running the Application
 
 * **Development Mode**: If you have `nodemon` installed globally, run:
   ```
-  bashCopyEditnpm run dev
+  npm run dev
   ```
   This will start the application with live reload, automatically restarting the server on file changes.
 * **Production Mode**: To start the application without live reload, run:
   ```
-  bashCopyEditnpm start
+  npm start
   ```
   
 
@@ -72,7 +72,7 @@ You can use tools like [Postman](https://www.postman.com/) or [Insomnia](https:/
 The project structure follows a modular approach to keep the code organized and maintainable:
 
 ```
-bashCopyEdit.
+.
 ├── src
 │   ├── controllers    # Business logic for each API route
 │   ├── models         # MongoDB models (using Mongoose)
@@ -110,7 +110,7 @@ This project uses **Joi** for request validation. Joi schemas are defined in the
 Example of a Joi validation schema:
 
 ```
-tsCopyEditimport Joi from 'joi';
+import Joi from 'joi';
 
 export const userSchema = Joi.object({
   name: Joi.string().required(),
