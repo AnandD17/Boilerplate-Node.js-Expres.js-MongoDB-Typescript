@@ -5,7 +5,7 @@ This is a boilerplate for building Node.js applications using modern technologie
 ## Features
 
 * **Node.js**: Asynchronous, event-driven JavaScript runtime.
-* **E**😝**ress.js**: Fast, unopinionated web framework for Node.js.
+* **Express.js**: Fast, unopinionated web framework for Node.js.
 * **MongoDB**: NoSQL database for scalable applications.
 * **TypeScript**: Type-safe JavaScript with static typing.
 * **Joi**: Powerful schema description and validation library.
@@ -98,7 +98,7 @@ The following scripts are available in the project:
 ## Technologies Used
 
 * **Node.js**: Runtime environment for executing JavaScript code server-side.
-* **E**😝**ress.js**: Web framework for building APIs and web applications.
+* **Express.js**: Web framework for building APIs and web applications.
 * **MongoDB**: NoSQL database for storing and managing application data.
 * **TypeScript**: Adds type safety and other modern features to JavaScript.
 * **Joi**: Schema-based validation for validating request bodies, query parameters, etc.
@@ -122,3 +122,6 @@ export const userSchema = Joi.object({
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Author
+This Boilerplate is created By [AnandD17](https://github.com/anandd17).
